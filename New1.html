@@ -1,0 +1,43 @@
+			<h5 style="padding-left:24px;">YOUR POOL</h5>
+			<div class="contentBlock">
+				<div class="descWrap">
+					<p class="winner" style="margin-left:-12px;">User Name:</p><p id="tablet_username" class="winnerName">username</p>
+				</div>
+				<div class="descWrap">
+					<p class="winner"  style="margin-left:-12px;">Pool Name:</p><p id="tablet_poolname" class="winnerName">poolname</p>
+				</div>
+				<div class="descWrap">
+					<p class="winner"  style="margin-left:-12px;">Pool Password:</p><p id="tablet_poolpass" class="winnerName">poolpass</p>
+				</div>
+			</div>
+
+			<h5 style="padding-left:24px;">SEND INVITATIONS</h5>
+			<div onclick="AMFacebook.doLogin(3);" class="contentBlock">
+				<div class="descWrap">
+					<p>Invite your friends to join your Social Bingo pool through Facebook.</p>
+					<a href="#"><img id="fb3" src="images/facebook_button.png" style="margin-top:6px;"></a>
+				</div>
+			</div>
+
+			<h5 style="padding-left:24px;">CREATE ANOTHER POOL</h5>
+			<div class="contentBlock">
+				<div class="descWrap">
+					<p>You can leave this pool to create another one, if you like. But each device can only be registered to one pool at a time.</p>
+					<div class="horzRule"></div>
+					<div style="float:left; width:100%; clear:both;">
+						<a href="javascript:;" onclick="openCreate(true,true);"><img src="images/green_badge_rev.png" style="float:left; top:0px; left:80px;"></a>
+						<a href="javascript:;" onclick="openCreate(false,true);"><img src="images/blue_badge_rev.png" style="float:right; top:0px; right:100px;"></a>
+					</div>
+				</div>
+			</div>
+
+			<h5 style="padding-left:24px;">JOIN ANOTHER POOL</h5>
+			<div class="contentBlock">
+				<div class="descWrap">
+					<p>You can leave this pool to join another one, if you like. But each device can only be registered to one pool at a time.</p>
+					<div class="horzRule"></div>
+					<input name="" class="jq-ui-forms" type="text" id="tabletsetuppoolname" placeholder="Enter a pool name." style="width:100%;">
+					<input name="" class="jq-ui-forms" type="text" id="tabletsetuppoolpass" placeholder="Enter the pool password." style="width:100%;">
+					<div onclick="searchPoolSetupTablet();" class="button" style="float:right; margin-top:none;">submit</div>
+				</div>
+			</div>
